@@ -1,0 +1,241 @@
+.section-header {
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.section-subheading {
+  font-size: 2.0rem;
+  font-weight: 300;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.hero-section {
+  background-image: url("../images/bg-testing.png");
+  background-size: cover;
+  margin-top: 64px;
+  padding: 140px 0;
+  position: relative;
+  overflow: hidden;
+  &__primary-tagline {
+    color: #ffffff;
+    font-size: 4.0rem;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    line-height: 6.0rem;
+    margin: 0;
+    text-align: center;
+  }
+  &__search-form {
+    background-color: #ffffff;
+    border: 1px solid $border-color;
+    border-radius: 4px;
+    height: 80px;
+    left: 0;
+    margin: 0 auto;
+    margin-top: 40px;
+    right: 0;
+    width: 100%;
+  }
+  &__search-block {
+    border-right: 1px solid $border-color;
+    display: inline-block;
+    float: left;
+    height: 79px;
+    padding: 20px;
+    vertical-align: middle;
+    width: calc(85% / 3);
+    &--with-button {
+      width: 15%
+    }
+    &--no-border {
+      border-right: none;
+    }
+    & label {
+      display: block;
+      font-size: 1.3rem;
+    }
+    & select {
+      background-color: #ffffff;
+      border: none;
+      color: $body-text-color;
+      font-family: $body-font;
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-top: 5px;
+      width: 100%;
+      :focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+.process-section {
+  background-color: $near-white;
+  border-bottom: 1px solid rgba($near-black, 0.05);
+  padding: 70px 0;
+  &__item {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  &__item-image {
+    display: inline-block;
+    margin-bottom: 20px;
+    img {
+      text-align: center;
+    }
+  }
+  &__item-title {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  &__item-text {
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 2.2rem;
+  }
+
+}
+
+.location-section {
+  padding: 50px 0;
+  &__row {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+  &__title-span {
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+  }
+  &__title {
+    font-size: 3.2rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+  }
+  &__info {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+  &__row-block {
+    display: inline-block;
+    margin-right: 15px;
+    &--layer {
+      background-color: rgba($near-black, 0.5);
+      cursor: pointer;
+      display: block;
+      height: 100%;
+      vertical-align: middle;
+      &:before{
+        content: '\200B';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+      }
+      &:hover {
+        background-color: rgba($near-black, 0.2);
+      }
+    }
+    &--cairo {
+      background-image: url("../images/home-1.jpg");
+      background-size: cover;
+      height: 130px;
+      vertical-align: bottom;
+      width: 32%;
+    }
+    &--abuja {
+      background-image: url("../images/home-3.jpg");
+      background-size: cover;
+      height: 170px;
+      margin-right: -80px;
+      vertical-align: bottom;
+      width: 35%;
+    }
+    &--lagos {
+      background-image: url("../images/home-2.jpg");
+      background-size: cover;
+      height: 250px;
+      vertical-align: top;
+      width: 50%;
+    }
+    &--pretoria {
+      background-image: url("../images/home-4.jpg");
+      background-size: cover;
+      background-size: cover;
+      height: 130px;
+      vertical-align: top;
+      width: 32%;
+    }
+    &--tunis {
+      background-image: url("../images/home-5.jpg");
+      background-size: cover;
+      height: 170px;
+      margin-right: -80px;
+      vertical-align: top;
+      width: 35%;
+    }
+  }
+  &__column {
+    display: inline-block;
+    margin-right: 15px;
+    position: relative;
+    width: 38%;
+  }
+  &__column-block {
+    display: inline-block;
+    height: calc(235px / 2);
+    right: 0;
+    margin-bottom: 10px;
+    position: absolute;
+    &:nth-child(even) {
+      margin-bottom: 0;
+    }
+    &--accra {
+      background-image: url("../images/home-6.jpg");
+      background-size: cover;
+      top: calc(235px / 2 + 2px);
+      vertical-align: bottom;
+      width: 75%;
+    }
+    &--luanda {
+      background-image: url("../images/home-3.jpg");
+      background-size: cover;
+      top: -13px;
+      width: 85%;
+    }
+  }
+}
+
+.subscribe-section {
+  background-color: $blue;
+  color: white;
+  padding: 70px 0;
+  form {
+    margin: 0 auto;
+    width: 80%;
+  }
+  input[type="email"] {
+    background-color: #ffffff;
+    border: 1px solid $border-color;
+    border-radius: 4px;
+    display: inline-block;
+    color: $body-text-color;
+    font-family: $body-font;
+    font-size: 2.0rem;
+    font-weight: 300;
+    height: $button-height;
+    margin-right: 10px;
+    padding: 10px;
+    width: 80%;
+  }
+}

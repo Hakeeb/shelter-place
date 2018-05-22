@@ -1,0 +1,116 @@
+.select-section {
+  margin-top: 64px;
+  padding: 40px 0;
+  &__heading {
+    font-size: 4.0rem;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    text-align: center;
+  }
+  &__subtitle {
+    font-size: 2.0rem;
+    text-align: center;
+  }
+  &__search-form {
+    background-color: #ffffff;
+    border: 1px solid $border-color;
+    border-radius: 4px;
+    height: 70px;
+    left: 0;
+    margin: 0 auto;
+    margin-top: 35px;
+    right: 0;
+    width: 40%;
+  }
+  &__search-block {
+    border-right: 1px solid $border-color;
+    display: inline-block;
+    float: left;
+    height: 69px;
+    padding: 15px;
+    vertical-align: middle;
+    width: calc(100% / 2);
+    &--with-button {
+      width: 20%;
+    }
+    &--no-border {
+      border-right: none;
+    }
+    & label {
+      display: block;
+      font-size: 1.3rem;
+    }
+    & select {
+      background-color: #ffffff;
+      border: none;
+      color: $body-text-color;
+      font-family: $body-font;
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-top: 5px;
+      width: 100%;
+      :focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+.select-form {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 40px;
+  &__item {
+    background-color: #fafafa;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 25px;
+    margin-bottom: 20px;
+    vertical-align: top;
+    width: 32%;
+    @include screen(small) {
+      display: block;
+    }
+  }
+  &__item-radio {
+    display: block;
+    margin: 0 auto;
+  }
+  &__item-image {
+    border-radius: 4px;
+    margin: 20px 0;
+    width: 100%;
+  }
+  &__item-title {
+    font-size: 1.9rem;
+    font-weight: 500;
+    letter-spacing: -0.8px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  &__item-details {
+    font-size: 1.6rem;
+    font-weight: 300;
+    letter-spacing: -0.8px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+  &__item-amenities {
+    color: $body-text-color;
+    font-weight: 300;
+    margin-bottom: 5px;
+    span {
+      margin-right: 5px;
+      img {
+        height: 20px;
+      }
+    }
+    &--no {
+      text-decoration: line-through;
+    }
+  }
+}

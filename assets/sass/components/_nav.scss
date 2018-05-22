@@ -1,0 +1,229 @@
+.global-nav {
+  border-bottom: 1px solid $border-color;
+  background-color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 400;
+  height: 64px;
+  left: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  @include screen(small) {
+    padding-top: 15px;
+  }
+  &__menu {
+    margin-bottom: 0;
+    margin-top: 0;
+    @include screen(med) {
+      display: none;
+    }
+  }
+  &__item {
+    color: $body-text-color;
+    display: inline-block;
+    height: 64px;
+    margin-left: 15px;
+    margin-right: 15px;
+    position: relative;
+    a {
+      display: inline-block;
+      padding-top: 23px;
+      padding-bottom: 23px;
+      &:hover {
+        border-bottom: 2px solid rgba(#303036, 0.6);
+      }
+    }
+  }
+  &__form {
+    display: inline-block;
+    padding-left: 24px;
+    width: 40%;
+    img {
+      display: inline-block;
+      height: 24px;
+      margin-top: 23px;
+    }
+    input {
+      border: none;
+      display: inline-block;
+      font-family: $body-font;
+      font-size: 1.6rem;
+      font-weight: 400;
+      padding-left: 10px;
+      padding-bottom: 10px;
+      width: 70%;
+      &:focus {
+        outline: none;
+      }
+    }
+    label {
+      display: none;
+    }
+    @include screen(small) {
+      display: none;
+    }
+    @include screen(med) {
+      width: 70%;
+    }
+  }
+  &__left {
+    float: left;
+  }
+  &__logo {
+    border-right: 1px solid $border-color;
+    display: inline-block;
+    height: 64px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 15px;
+    img {
+      height: 34px;
+      vertical-align: middle;
+    }
+    span {
+      color: $orange;
+      font-size: 2.5rem;
+      font-weight: 400;
+      letter-spacing: -0.7px;
+      line-height: 2.5rem;
+      margin-left: 5px;
+      vertical-align: middle;
+    }
+    @include screen(small) {
+      border-right: 0;
+    }
+    &--home {
+      border-right: none;
+    }
+  }
+  &__right {
+    float: right;
+  }
+  &--home {
+    border-bottom: none;
+  }
+}
+
+.global-mobile-nav {
+  display: none;
+  float: right;
+  @include screen(med) {
+    display: block;
+  }
+  &__trigger {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    margin: 24px 24px;
+    &.is-active {
+      span {
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        &:first-child {
+          top: 0.52em;
+          -webkit-transform: rotate(45deg);
+          transform: rotate(-45deg);
+        }
+        &:last-child {
+          top: -0.5em;
+          -webkit-transform: rotate(-45deg);
+          transform: rotate(45deg);
+        }
+      }
+    }
+    span {
+      background-color: $body-text-color;
+      display: block;
+      height: 0.25em;
+      margin-bottom: 0.250em;
+      position: relative;
+      top: 0;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      width: 1.5em;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+
+.global-mobile-nav-menu {
+  animation: fade-in 1s;
+  -webkit-animation: fade-in 1s;
+  background-color: $body-text-color;
+  border-radius: 3px;
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, .05);
+  display: none;
+  left: 20px;
+  padding: 10px 30px 30px;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  &__item {
+    a {
+      color: white;
+      display: block;
+      font-size: 2rem;
+      line-height: 2.2;
+    }
+  }
+  &__form {
+    color: white;
+    display: block;
+    padding-top: 10px;
+    width: 100%;
+    label {
+      display: none;
+    }
+    input {
+      background-color: #ffffff;
+      border: 1px solid $border-color;
+      border-radius: 4px;
+      color: $body-text-color;
+      font-family: $body-font;
+      font-size: 2.0rem;
+      font-weight: 300;
+      height: 50px;
+      margin-bottom: 20px;
+      padding: 10px;
+      width: 100%;
+    }
+  }
+}
+
+.global-tab-nav {
+  border-bottom: 1px solid $border-color;
+  font-size: 1.5rem;
+  height: 38px;
+  left: 0;
+  position: relative;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  &__item {
+    color: $body-text-color;
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px;
+    position: relative;
+    vertical-align: top;
+    a {
+      display: inline-block;
+      padding-bottom: 8px;
+      text-transform: uppercase;
+    }
+    &--active {
+      a {
+        border-bottom: 2px solid $blue;
+        color: $blue;
+        font-weight: 700;
+      }
+    }
+  }
+}

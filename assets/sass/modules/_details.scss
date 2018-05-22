@@ -1,0 +1,161 @@
+.details-section {
+  &__image-block {
+    position: relative;
+    width: 100%;
+    img {
+      height: 465px;
+      width: 100%;
+    }
+  }
+  &__button-group {
+    position: absolute;
+    top: 395px;
+    left: 20px;
+  }
+  &__details-block {
+    background-color: #ffffff;
+    padding: 30px 0;
+  }
+}
+
+.details {
+  padding: 30px 0;
+  border-bottom: 1px solid $border-color;
+  margin: 0 30px;
+  &__title {
+    font-size: 3.6rem;
+    font-weight: 600;
+    line-height: 44px;
+    margin-bottom: 1.5rem;
+  }
+  &__sub-title {
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 22px;
+    margin-bottom: 1.2rem;
+  }
+  &__text {
+    font-size: 1.7rem;
+    font-weight: 300;
+    line-height: 22px;
+    margin-bottom: 12px;
+  }
+  &--no-border {
+    border: 0;
+  }
+}
+
+.features {
+  font-size: 1.5rem;
+  left: 0;
+  padding: 20px 0;
+  position: relative;
+  text-align: center;
+  right: 0;
+  top: 0;
+  &__item {
+    color: $body-text-color;
+    display: inline-block;
+    font-weight: 300;
+    margin-left: 15px;
+    margin-right: 15px;
+    position: relative;
+    text-align: center;
+    vertical-align: top;
+    width: 20%;
+    span {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.amenities {
+  &__item {
+    color: $body-text-color;
+    display: inline-block;
+    font-weight: 300;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    position: relative;
+    vertical-align: top;
+    width: 190px;
+    span {
+      margin-right: 15px;
+      img {
+        height: 25px;
+      }
+    }
+    &--no {
+      text-decoration: line-through;
+    }
+  }
+}
+
+.documents {
+  &__item {
+    color: $body-text-color;
+    display: block;
+    font-weight: 300;
+    margin-bottom: 10px;
+    span {
+      margin-right: 5px;
+      img {
+        height: 25px;
+      }
+    }
+  }
+}
+
+.sidebar {
+  padding-top: 40px;
+  &__price {
+    background-color: $blue;
+    color: #ffffff;
+    display: block;
+    font-size: 3.0rem;
+    font-weight: 600;
+    letter-spacing: -0.8px;
+    line-height: 44px;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+  }
+  &__form {
+    border: 1px solid $border-color;
+    margin-top: 20px;
+    padding: 20px;
+    width: 100%;
+    &-header {
+      font-size: 2.0rem;
+      font-weight: 500;
+      line-height: 22px;
+      margin-bottom: 20px;
+    }
+    &-info {
+      font-size: 1.2rem;
+      font-weight: 300;
+      line-height: 15px;
+      margin-top: 10px;
+      text-align: center;
+    }
+    label {
+      font-size: 1.5rem;
+      font-weight: 400;
+      line-height: 22px;
+    }
+    input {
+      background-color: #ffffff;
+      border: 1px solid $border-color;
+      border-radius: 4px;
+      color: $body-text-color;
+      font-family: $body-font;
+      font-size: 2.0rem;
+      font-weight: 300;
+      height: 50px;
+      margin-bottom: 20px;
+      padding: 10px;
+      width: 100%;
+    }
+  }
+}

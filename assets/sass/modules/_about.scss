@@ -1,0 +1,22 @@
+.about-section {
+  margin-top: 64px;
+  padding: 80px;
+  &__header {
+    font-size: 2.3rem;
+    font-weight: 600;
+    line-height: 22px;
+    margin-bottom: 5px;
+  }
+  &__subheading {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 22px;
+    margin-bottom: 2.0rem;
+  }
+  &__text {
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 22px;
+    margin-bottom: 1.2rem;
+  }
+}
